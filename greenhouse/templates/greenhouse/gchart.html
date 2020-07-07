@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Greenhouse</title>
+    <link href="{% static 'css/box.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" loading="lazy" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="{% static 'js/googleChart.js' %}"></script>
+</head>
+
+<body>
+<div class="test-box">
+    <div>
+        <ul>
+            <li id="chart_div">
+                <script>graph("v0", "chart_div", 'Тиск, p', 'тиск')</script>
+            </li>
+            <li id="chart_div1">
+                <script>graph("v1", "chart_div1", 'Температура, t', 'температура')</script>
+            </li>
+            <li id="chart_div2">
+                <script>graph("v2", "chart_div2", 'Вологість, h', 'вологість')</script>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li id="chart_div3">
+                <script>graph("v3", "chart_div3", 'Температура грунту, t', 'температура грунту')</script>
+            </li>
+            <li id="chart_div4">
+                <script>graph("v4", "chart_div4", 'Вологість грунту, h', 'вологість грунту')</script>
+            </li>
+            <li id="chart_div5">
+                <script>graph("v5", "chart_div5", 'Освітленість, lux', 'освітленість')</script>
+            </li>
+        </ul>
+    </div>
+        <div>
+        <ul>
+            <li id="chart_div6">
+                <script>graph("v6", "chart_div6", 'Температура зовні, t', 'температура зовні')</script>
+            </li>
+            <li id="chart_div7">
+                <script>graph("v7", "chart_div7", 'Вологість зовні, h', 'Вологість зовні')</script>
+            </li>
+            <li id="chart_div8">
+                <script>graph("v8", "chart_div8", 'Показник комфорту', 'Показник комфорту')</script>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>

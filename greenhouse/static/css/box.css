@@ -1,0 +1,74 @@
+/* Общие стили - Для оформления */
+body { min-width: 600px; margin: 0 10px; font: 0.8125em/1 Verdana,sans-serif; background: #fff; }
+h1 {
+	font: 1.8em Georgia,Times,serif;
+	margin-bottom: 0.5em;
+	color: #E76D13;
+	text-align: center;
+}
+h1 span { color: #000;}
+.test-box {
+	background: #F8F7EF; 
+	border: 1px dashed #000;
+	border-bottom: 1px dashed #000;
+	
+	margin: 10px auto 10px;
+	padding: 10px 0;
+	6width: 500px;
+	
+}
+
+	.test-box ul {		
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		
+	
+	}
+.test-width { 
+	background: #E4C17D; 
+	margin-top: 10px;
+	text-align: center;
+	padding: 5px 0;
+	margin: 10px auto 10px;
+}
+
+
+
+/* CSS для примера */
+.test-box ul {
+	font: 14px Verdana, Geneva, sans-serif;
+	text-align: center;
+
+
+	display: -webkit-box; /* Android 4.3-, Safari без оптимизации */
+	-webkit-box-pack: justify; /* Android 4.3-, Safari без оптимизации */
+	display: -webkit-flex; /* оптимизация для Safari */
+	-webkit-justify-content: space-between; /* оптимизация для Safari */
+	display: flex;
+	justify-content: space-between;
+	text-align: justify; /* IE10-, Firefox 12-22 */
+	text-align-last: justify; /* IE10-, Firefox 12-22 */
+
+	/*text-justify: newspaper; /* IE7- */
+	/*zoom: 1; /* IE7- */
+}
+
+
+	.test-box ul li {
+		display : inline-block;
+		width : auto;
+		height: auto;
+		margin: 0 0 20px;
+		background: #E76D13;
+		vertical-align: top;
+		text-align: center;
+
+		display: -webkit-box; /* !хак! для Android 4.3-, должен идти после inline-block */
+
+
+
+		/*display: inline;  /* IE7- */
+		/*zoom: 1; /* IE7- */
+	}
