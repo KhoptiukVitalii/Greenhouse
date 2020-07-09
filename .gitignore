@@ -1,4 +1,5 @@
 *.pyc
+*.bat
 .idea
 chart_venv
 db.sqlite3
